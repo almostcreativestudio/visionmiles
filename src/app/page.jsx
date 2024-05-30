@@ -390,6 +390,9 @@ const Home = () => {
                           className="text-gray-500 sm:text-sm"
                           id="price-currency"
                         >
+                          {distanceType === "kilometer"
+                      ? "CAD"
+                      : "USD"}
                           CAD
                         </span>
                       </div>
