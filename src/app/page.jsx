@@ -63,17 +63,17 @@ const Home = () => {
     if (distanceType === "kilometer") {
       if (numOfDistance >= 160 && numOfDistance <= 299) {
         setCostPerDistance(51);
-      } else if (numOfDistance > 300 && numOfDistance <= 649) {
+      } else if (numOfDistance >= 300 && numOfDistance <= 649) {
         setCostPerDistance(41);
-      } else if (numOfDistance > 650 && numOfDistance <= 999) {
+      } else if (numOfDistance >= 650 && numOfDistance <= 999) {
         setCostPerDistance(36);
-      } else if (numOfDistance > 1000 && numOfDistance <= 1599) {
+      } else if (numOfDistance >= 1000 && numOfDistance <= 1599) {
         setCostPerDistance(33);
-      } else if (numOfDistance > 1600 && numOfDistance <= 2999) {
+      } else if (numOfDistance >= 1600 && numOfDistance <= 2999) {
         setCostPerDistance(30);
-      } else if (numOfDistance > 3000 && numOfDistance <= 7999) {
+      } else if (numOfDistance >= 3000 && numOfDistance <= 7999) {
         setCostPerDistance(26);
-      } else if (numOfDistance > 8000) {
+      } else if (numOfDistance >= 8000) {
         setCostPerDistance(22);
       } else {
         setCostPerDistance(0);
@@ -81,17 +81,17 @@ const Home = () => {
     } else {
       if (numOfDistance >= 100 && numOfDistance <= 200) {
         setCostPerDistance(37);
-      } else if (numOfDistance > 201 && numOfDistance <= 400) {
+      } else if (numOfDistance >= 201 && numOfDistance <= 400) {
         setCostPerDistance(30);
-      } else if (numOfDistance > 401 && numOfDistance <= 600) {
+      } else if (numOfDistance >= 401 && numOfDistance <= 600) {
         setCostPerDistance(26);
-      } else if (numOfDistance > 601 && numOfDistance <= 999) {
+      } else if (numOfDistance >= 601 && numOfDistance <= 999) {
         setCostPerDistance(24);
-      } else if (numOfDistance > 1000 && numOfDistance <= 1999) {
+      } else if (numOfDistance >= 1000 && numOfDistance <= 1999) {
         setCostPerDistance(22);
-      } else if (numOfDistance > 2000 && numOfDistance <= 4999) {
+      } else if (numOfDistance >= 2000 && numOfDistance <= 4999) {
         setCostPerDistance(19);
-      } else if (numOfDistance > 5000) {
+      } else if (numOfDistance >= 5000) {
         setCostPerDistance(15);
       } else {
         setCostPerDistance(0);
