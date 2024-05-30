@@ -205,7 +205,6 @@ const Home = () => {
 
   return (
     <>
-      <Header />
       <div className="w-screen bg-gray-100 py-16 h-full">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl text-center text-gray-900 font-semibold pb-10">
@@ -448,7 +447,6 @@ const Home = () => {
           </form>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
