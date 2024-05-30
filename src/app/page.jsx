@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import numeral from "numeral";
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
 
 const Home = () => {
   const [distanceType, setDistanceType] = useState("kilometer");
