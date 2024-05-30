@@ -73,24 +73,26 @@ const Home = () => {
         setCostPerDistance(30);
       } else if (numOfDistance > 3000 && numOfDistance <= 8000) {
         setCostPerDistance(26);
-      } else if (numOfDistance > 8000) {
+      } else if (numOfDistance > 8001) {
         setCostPerDistance(22);
       } else {
         setCostPerDistance(0);
       }
     } else {
       if (numOfDistance >= 100 && numOfDistance <= 200) {
-        setCostPerDistance(60);
-      } else if (numOfDistance > 200 && numOfDistance <= 400) {
-        setCostPerDistance(50);
-      } else if (numOfDistance > 200 && numOfDistance <= 400) {
-        setCostPerDistance(50);
-      } else if (numOfDistance > 400 && numOfDistance <= 600) {
-        setCostPerDistance(40);
-      } else if (numOfDistance > 600 && numOfDistance <= 999) {
-        setCostPerDistance(35);
-      } else if (numOfDistance > 999) {
+        setCostPerDistance(37);
+      } else if (numOfDistance > 201 && numOfDistance <= 400) {
         setCostPerDistance(30);
+      } else if (numOfDistance > 401 && numOfDistance <= 600) {
+        setCostPerDistance(26);
+      } else if (numOfDistance > 601 && numOfDistance <= 999) {
+        setCostPerDistance(24);
+      } else if (numOfDistance > 1000 && numOfDistance <= 1999) {
+        setCostPerDistance(22);
+      } else if (numOfDistance > 2000 && numOfDistance <= 4999) {
+        setCostPerDistance(19);
+      } else if (numOfDistance > 5000) {
+        setCostPerDistance(15);
       } else {
         setCostPerDistance(0);
       }
@@ -388,7 +390,7 @@ const Home = () => {
                           className="text-gray-500 sm:text-sm"
                           id="price-currency"
                         >
-                          USD
+                          CAD
                         </span>
                       </div>
                     </div>
