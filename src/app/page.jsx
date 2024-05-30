@@ -393,7 +393,6 @@ const Home = () => {
                           {distanceType === "kilometer"
                       ? "CAD"
                       : "USD"}
-                          CAD
                         </span>
                       </div>
                     </div>
