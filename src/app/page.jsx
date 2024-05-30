@@ -79,7 +79,7 @@ const Home = () => {
         setCostPerDistance(0);
       }
     } else {
-      if (numOfDistance > 100 && numOfDistance <= 200) {
+      if (numOfDistance >= 100 && numOfDistance <= 200) {
         setCostPerDistance(60);
       } else if (numOfDistance > 200 && numOfDistance <= 400) {
         setCostPerDistance(50);
