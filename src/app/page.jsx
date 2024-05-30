@@ -61,16 +61,20 @@ const Home = () => {
 
   useEffect(() => {
     if (distanceType === "kilometer") {
-      if (numOfDistance >= 60 && numOfDistance <= 299) {
-        setCostPerDistance(37);
-      } else if (numOfDistance > 299 && numOfDistance <= 650) {
-        setCostPerDistance(31);
+      if (numOfDistance >= 160 && numOfDistance <= 299) {
+        setCostPerDistance(51);
+      } else if (numOfDistance > 300 && numOfDistance <= 649) {
+        setCostPerDistance(41);
       } else if (numOfDistance > 650 && numOfDistance <= 999) {
-        setCostPerDistance(25);
-      } else if (numOfDistance > 999 && numOfDistance <= 1600) {
+        setCostPerDistance(36);
+      } else if (numOfDistance > 1000 && numOfDistance <= 1599) {
+        setCostPerDistance(33);
+      } else if (numOfDistance > 1600 && numOfDistance <= 2999) {
+        setCostPerDistance(30);
+      } else if (numOfDistance > 3000 && numOfDistance <= 8000) {
+        setCostPerDistance(26);
+      } else if (numOfDistance > 8000) {
         setCostPerDistance(22);
-      } else if (numOfDistance > 1600) {
-        setCostPerDistance(19);
       } else {
         setCostPerDistance(0);
       }
