@@ -348,7 +348,7 @@ const Home = () => {
                       type="number"
                       name="numOfDistance"
                       className="block w-full rounded-md border-0 py-3 px-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      placeholder="60--3000 KM"
+                      placeholder=""
                       value={numOfDistance}
                       onChange={(e) => setNumOfDistance(e.target.value)}
                     />
