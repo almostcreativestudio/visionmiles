@@ -71,9 +71,9 @@ const Home = () => {
         setCostPerDistance(33);
       } else if (numOfDistance > 1600 && numOfDistance <= 2999) {
         setCostPerDistance(30);
-      } else if (numOfDistance > 3000 && numOfDistance <= 8000) {
+      } else if (numOfDistance > 3000 && numOfDistance <= 7999) {
         setCostPerDistance(26);
-      } else if (numOfDistance > 8001) {
+      } else if (numOfDistance > 8000) {
         setCostPerDistance(22);
       } else {
         setCostPerDistance(0);
