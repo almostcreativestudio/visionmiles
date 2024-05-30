@@ -108,11 +108,11 @@ const Home = () => {
       newErrors.numOfDistance = "Please enter a valid number";
       valid = false;
     } else {
-      if (distanceType === "kilometer" && numOfDistance < 100) {
-        newErrors.numOfDistance = "Please enter a greater value of 100";
+      if (distanceType === "kilometer" && numOfDistance < 160) {
+        newErrors.numOfDistance = "Please enter a minimum value of 160";
         valid = false;
-      } else if (distanceType === "miles" && numOfDistance < 60) {
-        newErrors.numOfDistance = "Please enter a greater value of 60";
+      } else if (distanceType === "miles" && numOfDistance < 100) {
+        newErrors.numOfDistance = "Please enter a minimum value of 100";
         valid = false;
       } else {
         newErrors.numOfDistance = "";
