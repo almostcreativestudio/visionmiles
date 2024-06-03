@@ -216,9 +216,7 @@ const Home = () => {
           <h1 className="text-5xl text-center text-gray-900 font-semibold pb-10">
             Vision Miles™ Calculator
           </h1>
-          <h2 className="text-2xl text-center font-semibold">Our flexible pricing model lets you focus on the areas of your orchard you care most about.</h2>
-          <br></br>
-          <p className="block font-medium text-center leading-6 text-gray-900">Configure your XV3 package based on your farm’s needs. With options that tailor the system to your tractor and ATV, and flexibility to purchase based on Vision MilesTM or acres, you can align your data collection costs with your farm’s needs.</p>
+          <p className="block font-medium text-center leading-6 text-gray-900">Our flexible pricing model lets you focus on the areas of your orchard you care most about. Configure your XV3 package based on your farm’s needs. With options that tailor the system to your tractor and ATV, and flexibility to purchase based on Vision MilesTM or acres, you can align your data collection costs with your farm’s needs.</p>
           <br></br>
           <form onSubmit={handleSubmit}>
             <div className="bg-white p-10 rounded-xl shadow-mdb grid grid-cols-1 gap-6 shadow-md">
@@ -305,7 +303,7 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block font-medium leading-6 text-gray-900">
-                    Select your season to estimate acres per week scanned to determine pricing
+                    Select Season
                   </label>
                   <select
                     value={packageName}
@@ -321,6 +319,7 @@ const Home = () => {
                   {errors.packageType && (
                     <p className="text-red-500 text-sm">{errors.packageType}</p>
                   )}
+                  <p className="text-sm">Select your season to estimate acres per week scanned to determine pricing.</p>
                 </div>
                 <div>
                   <label className="block font-medium leading-6 text-gray-900">
