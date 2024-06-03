@@ -217,7 +217,8 @@ const Home = () => {
             Vision Miles™ Calculator
           </h1>
           <h2 className="text-2xl text-center font-semibold">Our flexible pricing model lets you focus on the areas of your orchard you care most about.</h2>
-          <h2 className="text-2xl text-center font-semibold">Configure your XV3 package based on your farm’s needs. With options that tailor the system to your tractor and ATV, and flexibility to purchase based on Vision MilesTM or acres, you can align your data collection costs with your farm’s needs.</h2>
+          <br>
+          <p className="block font-medium leading-6 text-gray-900">Configure your XV3 package based on your farm’s needs. With options that tailor the system to your tractor and ATV, and flexibility to purchase based on Vision MilesTM or acres, you can align your data collection costs with your farm’s needs.</p>
           <form onSubmit={handleSubmit}>
             <div className="bg-white p-10 rounded-xl shadow-mdb grid grid-cols-1 gap-6 shadow-md">
               <div>
