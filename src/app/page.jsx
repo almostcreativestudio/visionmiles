@@ -216,6 +216,8 @@ const Home = () => {
           <h1 className="text-5xl text-center text-gray-900 font-semibold pb-10">
             Vision Miles™ Calculator
           </h1>
+          <h2 className="text-2xl text-center font-semibold">Our flexible pricing model lets you focus on the areas of your orchard you care most about.</h2>
+          <h2 className="text-2xl text-center font-semibold">Configure your XV3 package based on your farm’s needs. With options that tailor the system to your tractor and ATV, and flexibility to purchase based on Vision MilesTM or acres, you can align your data collection costs with your farm’s needs.</h2>
           <form onSubmit={handleSubmit}>
             <div className="bg-white p-10 rounded-xl shadow-mdb grid grid-cols-1 gap-6 shadow-md">
               <div>
@@ -301,7 +303,7 @@ const Home = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block font-medium leading-6 text-gray-900">
-                    Select Package
+                    Select your season to estimate acres per week scanned to determine pricing
                   </label>
                   <select
                     value={packageName}
@@ -310,11 +312,9 @@ const Home = () => {
                     id="location"
                     className="mt-2 block w-full rounded-md border-0 py-3 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   >
-                    <option>Select Package</option>
-                    <option value="startter">Starter</option>
-                    <option value="v360">Vivid 360</option>
-                    <option value="vyplus">Vivid Yield Plus</option>
-                    <option value="vmanager">Vivid Manager</option>
+                    <option>Select Season</option>
+                    <option value="vmanager">Half Season - Vivid Manager</option>
+                    <option value="v360">Full Season - Vivid 360 Package</option>
                   </select>
                   {errors.packageType && (
                     <p className="text-red-500 text-sm">{errors.packageType}</p>
